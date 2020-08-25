@@ -1,6 +1,5 @@
-<h1>Favorite Movie</h1>
-<h2>{{ title }}</h2>
-
-<img src="{{ poster }}" alt="{{ title }}">
-
-<p>{{ plot }}</p>
+{{#each movies}}
+<h1>{{ this.title }}</h1>
+<img src="{{ this.poster }}" alt="{{ this.title }}">
+<p>{{ this.plot }}</p>
+{{/each}}
