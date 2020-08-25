@@ -3,12 +3,33 @@ const adder = (a, b, cb) => {
   cb(sum)
 }
 
-adder(5, 7, sum => {
-  console.log(sum)
-})
-adder(12, 3, sum => {
-  console.log(`The sum is ${sum}`)
-})
-adder(1, 1, hotdog => {
-  console.log(hotdog + 5)
-})
+// adder(5, 7, sum => {
+//   console.log(sum)
+// })
+
+const subtracter = (a, b, cb) => {
+  const result = a - b
+  cb(result)
+}
+
+// subtracter(5, 7, result => {
+//   console.log(result)
+// })
+
+const multiplier = (a, b, cb) => {
+  const result = a * b
+  cb(result)
+}
+
+// multiplier(5, 7, result => {
+//   console.log(result)
+// })
+
+const divider = (a, b, cb) => {
+  const result = a / b
+  cb(result)
+}
+
+// divider(5, 7, result => {
+//   console.log(result)
+// })
