@@ -10,8 +10,16 @@ app.use(express.json())
 app.engine('.hbs', require('express-handlebars')({ extname: '.hbs' }))
 app.set('view engine', '.hbs')
 
-app.get('/test', (req, res) => {
-  res.render('test')
+app.get('/about', (req, res) => {
+  res.render('about')
+})
+
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio')
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact')
 })
 
 app.listen(3000)
